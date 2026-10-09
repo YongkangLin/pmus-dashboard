@@ -14,11 +14,10 @@ async function loadConnection() {
     const link = document.getElementById('open-dashboard');
     link.href = target.href;
     link.hidden = false;
-    document.getElementById('destination').textContent = target.hostname;
-    document.getElementById('endpoint-detail').hidden = false;
-    message.textContent = 'Sign-in required. Opening this link does not submit any trading action.';
+    message.textContent = 'Opening PMUS Trader…';
+    window.location.replace(target.href);
   } catch (_) {
-    message.textContent = 'The secure dashboard connection is being prepared. Refresh this page shortly.';
+    message.textContent = 'The dashboard connection is unavailable. Refresh this page shortly.';
   }
 }
 loadConnection();
