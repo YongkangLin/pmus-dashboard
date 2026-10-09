@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Open your private PMUS dashboard securely.">
+  <title>PMUS · Dashboard access</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="./"><span class="mark" aria-hidden="true">P</span><span>PMUS<span class="brand-detail">DASHBOARD</span></span></a><span class="secure"><span aria-hidden="true">●</span> Private account access</span></header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="intro"><p class="eyebrow">YOUR TRADING DESK</p><h1>One place.<br>Your live dashboard.</h1><p class="lead">Review your account, follow market decisions, and use your trader controls after signing in.</p><div class="product-tags"><span>Bitcoin</span><span>Daily high weather</span></div></div>
+      <section class="access-card" aria-labelledby="access-title">
+        <div class="card-top"><span class="key-icon" aria-hidden="true">↗</span><span class="tag">SECURE ACCESS</span></div>
+        <h2 id="access-title">Open your trading desk</h2>
+        <p>Use the dashboard password you already set on your Mac. Your account and controls stay behind sign-in.</p>
+        <a id="open-dashboard" class="button" hidden rel="noreferrer noopener">Open live dashboard <span aria-hidden="true">↗</span></a>
+        <p id="connection-message" class="connection-message" role="status">Loading the dashboard connection…</p>
+        <div id="endpoint-detail" hidden><span class="detail-label">Verified destination</span><code id="destination"></code><p class="connection-note">This temporary connection requires the host Mac and its tunnel to stay online. If it is unavailable, refresh this page for an updated link.</p></div>
+        <noscript><p>Enable JavaScript to load the current dashboard link.</p></noscript>
+      </section>
+    </section>
+    <section class="steps" aria-label="How to access your dashboard">
+      <article><span class="step-number">01</span><h3>Open securely</h3><p>This page takes you to the private dashboard. Your password is entered there.</p></article>
+      <article><span class="step-number">02</span><h3>Review live state</h3><p>See the account, current market decisions, and the trader’s actual status after sign-in.</p></article>
+      <article><span class="step-number">03</span><h3>Use your controls</h3><p>Review the displayed capital settings and confirmations before submitting an action.</p></article>
+    </section>
+    <p class="privacy-note">Account balances, positions, API keys, and passwords are never stored on this GitHub Pages site. Opening the dashboard does not start trading.</p>
+  </main>
+  <footer class="wrap"><span>PMUS · Private trading desk</span><span>Website on GitHub Pages · Runtime on your Mac</span></footer>
+</body>
+</html>
